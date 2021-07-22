@@ -1,28 +1,65 @@
----
-layout: null
----
-
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>{{ site.title }}</title>
- <link href="{{ site.url }}{{ site.baseurl }}/atom.xml" rel="self"/>
- <link href="{{ site.url }}{{ site.baseurl }}/"/>
- <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>{{ site.url }}</id>
+ <title>Noah Kennedy</title>
+ <link href="https://noahkennedy.co/atom.xml" rel="self"/>
+ <link href="https://noahkennedy.co/"/>
+ <updated>2021-07-22T02:48:59+00:00</updated>
+ <id>https://noahkennedy.co</id>
  <author>
-   <name>{{ site.author.name }}</name>
-   <email>{{ site.author.email }}</email>
+   <name>Noah Kennedy</name>
+   <email>noah.kennedy1@gmail.com@gmail.com</email>
  </author>
 
- {% for post in site.posts %}
+ 
  <entry>
-   <title>{{ post.title }}</title>
-   <link href="{{ site.url }}{{ post.url }}"/>
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>{{ site.url }}{{ site.baseurl }}{{ post.id }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
+   <title>We're back!</title>
+   <link href="https://noahkennedy.co/2021/07/13/we-are-back/"/>
+   <updated>2021-07-13T00:00:00+00:00</updated>
+   <id>https://noahkennedy.co/2021/07/13/we-are-back</id>
+   <content type="html">&lt;p&gt;It’s been about 6 months since I first tried to kick off a personal website. There has been some progress - I published an article, created a few pages, and tried for several weeks without results to add a LinkedIn icon to my sidebar. But at some point the progress stopped. The beginning of the end was likely from getting hung up on LinkedIn URLs, however the full collapse definitely stemmed from combination of unrelated factors (something something &lt;em&gt;life got in the way&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;I think there are two good lessons here -&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;A waterfall approach to personal websites, or software engineering in general, simply doesn’t work. In other words, I became caught up in the fine details of making my site ‘perfect’, and failed to work on what I actually set out to do: write out, flesh out, and publish my thoughts out. This is loosely related to an interesting article a colleague sent me, about the &lt;a href=&quot;https://blog.crisp.se/2016/01/25/henrikkniberg/making-sense-of-mvp&quot;&gt;Skateboard Minimum Viable Product&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Creativity is, as Abraham Maslow once suggested, only possible if your basic needs and psychological needs are both met. From my seat of at the zenith of privilege, where the majority of the pyramid is filled in, there’s kind of an added layer: if life is at all hectic, it becomes pretty hard to be creative (maybe this is just me).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;As I said above, Life got in the way, and I think that’s where any and all creative progress came to a halt. Quite a few things happened:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;During February and March, I devoted most of my free time to triathlon, training and racing for the USA Triathlon Elite Draft Legal Race in Clermont, FL.&lt;/li&gt;
+  &lt;li&gt;During March and April, I was on the hunt - job searching and interviews took up most of my free time outside of training and work.&lt;/li&gt;
+  &lt;li&gt;During April I was traveling - after quitting my job at Deloitte, I took advantage of my newfound freedom and vaccination status to fly out West and see good friends.&lt;/li&gt;
+  &lt;li&gt;In May and June I was consumed fully by a new job at a precision medicine company called &lt;a href=&quot;https://www.tempus.com/&quot;&gt;Tempus&lt;/a&gt;, as well as a few miscallaneous triathlons.&lt;/li&gt;
+  &lt;li&gt;In June and early July, I was helping my parents pack up the family home so they could travel for retirement, and planning my own move to Manhattan. There was also some trauma - a shooting directly outside of my row house in DC left me pretty shaken, with several of my windows shot through, my car with bullets in it, and an innocent bystander dying only 20 feet away from my bedroom.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A lot happened in the last 6 months, and although many of these things were overwhelmingly positive experiences, they left me without the stability needed to pursue creative projects. I would say this was good and bad: life is best when it ebs and flows, and stability != adventure. Both are full of living, just in different ways. I think to be more specific about what factors prevented me from “creative extracurricular work”, the #1 factor was definitely the new job. Learning 40+ hours a week puts your brain in a state where the only problems it can really think about are the ones from 9-5. Now that I’m not constantly learning, my brain has a bit more space to roam, and explore the outer edges.&lt;/p&gt;
+</content>
  </entry>
- {% endfor %}
+ 
+ <entry>
+   <title>Welcome to my Site</title>
+   <link href="https://noahkennedy.co/2021/01/10/welcome-to-lanyon/"/>
+   <updated>2021-01-10T00:00:00+00:00</updated>
+   <id>https://noahkennedy.co/2021/01/10/welcome-to-lanyon</id>
+   <content type="html">&lt;p&gt;After messing around with github pages for a bit, and following a simple but effective &lt;a href=&quot;https://github.com/barryclark/jekyll-now&quot;&gt;guide by Barry Clark&lt;/a&gt; on how to host your first Jekyll site via Github, I decided to play around with a few more themes.&lt;/p&gt;
+
+&lt;p&gt;Barry’s guide was great, and I need to give him the kudos he deserves here. He convinced me that anyone with a propensity for coding and hacking should look at Jekyll blogs instead of Wordpress. He’s right - how can I blog about data engineering and coding on a blog that I wrote no code for?&lt;/p&gt;
+
+&lt;p&gt;I’ve moved on since Barry’s guide, since I wanted a bit more control over my own theme. I’m still figuring out how to achieve the same URL elegance without buying my own domain name just yet. The theme I’m using is Lanyon -&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Lanyon is an unassuming &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; theme that places content first by tucking away navigation in a hidden drawer. It’s based on &lt;a href=&quot;http://getpoole.com&quot;&gt;Poole&lt;/a&gt;, the Jekyll butler.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To be frank, I’m still figuring things out (partly due to an issue with a lack of sudo privileges on my main computer, thanks Deloitte), but I’m confident I’ll get there eventually.&lt;/p&gt;
+
+&lt;p&gt;I think this will serve my purposes, at least for now, and I love the bit of Jekyll &amp;amp; Hyde Fanfiction surrounding Jekyll, and the theme I’m using (Lanyon, built on Poole). My knowledge of Jekyll &amp;amp; Hyde is limited to the Runescape quest I did circa the 6th grade, so I think it’s time I open up the book for real.&lt;/p&gt;
+</content>
+ </entry>
+ 
 
 </feed>
