@@ -4,7 +4,7 @@
  <title>Noah Kennedy</title>
  <link href="https://noahkennedy.co/atom.xml" rel="self"/>
  <link href="https://noahkennedy.co/"/>
- <updated>2021-08-07T03:50:20+00:00</updated>
+ <updated>2021-08-07T21:40:23+00:00</updated>
  <id>https://noahkennedy.co</id>
  <author>
    <name>Noah Kennedy</name>
@@ -13,11 +13,27 @@
 
  
  <entry>
+   <title>New York, New York</title>
+   <link href="https://noahkennedy.co/2021/08/06/ny-ny/"/>
+   <updated>2021-08-06T00:00:00+00:00</updated>
+   <id>https://noahkennedy.co/2021/08/06/ny-ny</id>
+   <content type="html">&lt;p&gt;Month one in the city 
+&lt;!--excerpt--&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Leveraging Jekyll Paginate v2</title>
    <link href="https://noahkennedy.co/2021/07/26/paginate2/"/>
    <updated>2021-07-26T00:00:00+00:00</updated>
    <id>https://noahkennedy.co/2021/07/26/paginate2</id>
-   <content type="html">&lt;p&gt;GitHub Pages, the Jekyll website generator used for this site, generally works pretty well. One of the major upsides is simplicity, but like all simplistic coding tools, there are guard rails in place as well. Simplicity comes at a cost. In our case, only &lt;a href=&quot;https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll&quot;&gt;8 jekyll plugins&lt;/a&gt; are supported by GH pages.&lt;/p&gt;
+   <content type="html">&lt;p&gt;A GitHub Pages Workaround for adding unsupported plugins&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
+
+&lt;p&gt;GitHub Pages, the Jekyll website generator used for this site, generally works pretty well. One of the major upsides is simplicity, but like all simplistic coding tools, there are guard rails in place as well. Simplicity comes at a cost. In our case, only &lt;a href=&quot;https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll&quot;&gt;8 jekyll plugins&lt;/a&gt; are supported by GH pages.&lt;/p&gt;
 
 &lt;h1 id=&quot;summary&quot;&gt;Summary&lt;/h1&gt;
 
@@ -165,7 +181,9 @@ env:
    <link href="https://noahkennedy.co/2021/07/13/we-are-back/"/>
    <updated>2021-07-13T00:00:00+00:00</updated>
    <id>https://noahkennedy.co/2021/07/13/we-are-back</id>
-   <content type="html">&lt;p&gt;It’s been about 6 months since I first tried to kick off a personal website. There has been some progress - I published an article, created a few pages, and tried for several weeks without results to add a LinkedIn icon to my sidebar. But at some point the progress stopped. The beginning of the end was likely from getting hung up on LinkedIn URLs, however the full collapse definitely stemmed from combination of unrelated factors (something something &lt;em&gt;life got in the way&lt;/em&gt;).&lt;/p&gt;
+   <content type="html">&lt;p&gt;It’s been about 6 months since I first tried to kick off a personal website. There has been some progress - I published an article, created a few pages, and tried for several weeks without results to add a LinkedIn icon to my sidebar. But at some point the progress stopped. &lt;!--excerpt--&gt;&lt;/p&gt;
+
+&lt;p&gt;The beginning of the end was likely from getting hung up on LinkedIn URLs, however the full collapse definitely stemmed from combination of unrelated factors (something something &lt;em&gt;life got in the way&lt;/em&gt;).&lt;/p&gt;
 
 &lt;p&gt;I think there are two good lessons here -&lt;/p&gt;
 
@@ -194,6 +212,8 @@ env:
    <updated>2021-01-10T00:00:00+00:00</updated>
    <id>https://noahkennedy.co/2021/01/10/welcome-to-lanyon</id>
    <content type="html">&lt;p&gt;After messing around with github pages for a bit, and following a simple but effective &lt;a href=&quot;https://github.com/barryclark/jekyll-now&quot;&gt;guide by Barry Clark&lt;/a&gt; on how to host your first Jekyll site via Github, I decided to play around with a few more themes.&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
 
 &lt;p&gt;Barry’s guide was great, and I need to give him the kudos he deserves here. He convinced me that anyone with a propensity for coding and hacking should look at Jekyll blogs instead of Wordpress. He’s right - how can I blog about data engineering and coding on a blog that I wrote no code for?&lt;/p&gt;
 
