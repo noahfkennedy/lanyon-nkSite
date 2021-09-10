@@ -173,6 +173,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 
+
 /* Sidebar nav */
 .sidebar-nav {
   border-bottom: 1px solid rgba(255,255,255,.1);
@@ -304,14 +305,14 @@ a.sidebar-nav-item:focus {
 
 .page,
 .post {
-  margin-bottom: 4em;
+  margin-bottom: 2.5em;
 }
 
 /* Blog post or page title */
 .page-title,
 .post-title,
 .post-title a {
-  color: #303030;
+  color: #0a5e9a !important;
 }
 .page-title,
 .post-title {

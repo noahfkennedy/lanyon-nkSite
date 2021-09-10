@@ -1,28 +1,546 @@
----
-layout: null
----
-
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>{{ site.title }}</title>
- <link href="{{ site.url }}{{ site.baseurl }}/atom.xml" rel="self"/>
- <link href="{{ site.url }}{{ site.baseurl }}/"/>
- <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>{{ site.url }}</id>
+ <title>Noah Kennedy</title>
+ <link href="https://noahkennedy.co/atom.xml" rel="self"/>
+ <link href="https://noahkennedy.co/"/>
+ <updated>2021-09-10T02:56:25+00:00</updated>
+ <id>https://noahkennedy.co</id>
  <author>
-   <name>{{ site.author.name }}</name>
-   <email>{{ site.author.email }}</email>
+   <name>Noah Kennedy</name>
+   <email>noah.kennedy1@gmail.com@gmail.com</email>
  </author>
 
- {% for post in site.posts %}
+ 
  <entry>
-   <title>{{ post.title }}</title>
-   <link href="{{ site.url }}{{ post.url }}"/>
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>{{ site.url }}{{ site.baseurl }}{{ post.id }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
+   <title>Optimizing Your Tech Stack for Productivity</title>
+   <link href="https://noahkennedy.co/2021/08/18/21-addictive-tech/"/>
+   <updated>2021-08-18T00:00:00+00:00</updated>
+   <id>https://noahkennedy.co/2021/08/18/21-addictive-tech</id>
+   <content type="html">&lt;p&gt;A guide and outline on steps I’ve taken to make my tech stack less addictive. 
+&lt;!--excerpt--&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;The year is 2021 and we have a plethora of tools at our disposal to make life more convenient and connected. I was born at an interesting time - old enough to remember dial up internet and floppy disks but young enough to be a digital native. Smart phones started to become ubiquitous as I hit high school, before I had a chance to experience adulthood without the convenience of technology.&lt;/p&gt;
+
+&lt;p&gt;What would my brain be like without all this technology? What would my attention span be like? Would I have less anxiety? Would my days be better without my 70-80 average pickups a day?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2021-08-18-21-addictive-tech/tooManyPhones.jpg&quot; alt=&quot;real photo of my life as a consultant&quot; /&gt;
+&lt;sub&gt;&lt;sup&gt;Accurate representation of my consulting days, when I had 3 iPhones (Stock photo, Unsplash)&lt;sub&gt;&lt;sup&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/p&gt;
+
+&lt;p&gt;I’m regularly a bit disgusted with how much of my life seems to be wasted by apps and companies trying to monopolize my time, a situation that I have little control over and no input on. 70-80 interruptions &lt;em&gt;daily&lt;/em&gt; can’t be good for my ability to focus. So, I have started taking steps to distance myself from technology. I’ve added guard rails to protect myself against the slip into addictive patterns.&lt;/p&gt;
+
+&lt;p&gt;This is a comprehensive guide that I plan on updating as time goes on. First, I will discuss why we care, and provide a framework for fixing things yourself. Next, I’ll offer my solutions: the techniques and tools I’ve implemented on my own phone and computer.&lt;/p&gt;
+
+&lt;h1 id=&quot;ideology&quot;&gt;Ideology&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Why do we care about restricting compulsive phone use?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;My reasons center around productivity and mental health. Mindless Usage of my phone gets in the way of hobbies like reading or playing music, and makes me feel more anxious. Impulsive scrolling fragments my days, and prevents me from deep work, moments of self awareness/thoughtfulness, states of flow where I feel genuinely &lt;em&gt;amazing&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;How can we remedy this problem of Mindless Usage? Below is a general framework, a philosophy of how these Mis-use Patterns can be curbed.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Identification&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Identifying Addictive Patterns allows you to remediate them.&lt;/li&gt;
+  &lt;li&gt;In order to identify Addictive Patterns, you need regular retrospectives to reflect on what Mindless Usage was the most problematic. I retrospect on Monday mornings.&lt;/li&gt;
+  &lt;li&gt;Sites with news feeds that encourage &lt;em&gt;passive consumption&lt;/em&gt; (e.g. News Feeds) or leverage &lt;a href=&quot;https://www.diygenius.com/the-dopamine-loop/&quot;&gt;variable rewards&lt;/a&gt; are generally the most problematic, but everyone has a different vice.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Remediation&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Whenever possible, apps/sites with Addictive Patterns should have Friction Points.&lt;/li&gt;
+  &lt;li&gt;A Friction Point is when you insert a mindfulness task or pause to the start/middle of a problematic app/site to give your conscious self the chance to avoid a bad habit.&lt;/li&gt;
+  &lt;li&gt;Progress is not linear, and some days are better than others. Be kind to yourself.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The steps below are implementations of this framework.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;phone-adaptations&quot;&gt;Phone Adaptations&lt;/h1&gt;
+
+&lt;p&gt;Most of the detailed instructions here are for iPhone - I’ve switched between iOS and Android several times, landing on Apple for now mainly due to the social implications of not having iMessage. If you have an Android, these steps will still apply, however the implementation will be different.&lt;/p&gt;
+
+&lt;h2 id=&quot;coach-tonys-guide&quot;&gt;Coach Tony’s Guide&lt;/h2&gt;
+
+&lt;p&gt;My first introduction to detailed iPhone modifications for better productivity came from &lt;a href=&quot;https://betterhumans.pub/how-to-set-up-your-iphone-for-productivity-focus-and-your-own-longevity-bb27a68cc3d8&quot;&gt;this BetterHumans article by Coach Tony&lt;/a&gt;. It’s a behemoth of a read, but well written enough that I’m not going to reinvent the wheel. It’s worth it, I promise.&lt;/p&gt;
+
+&lt;p&gt;Since first reading it, Coach Tony has added a &lt;em&gt;lot&lt;/em&gt; of extra information, some of which I find to be unnecessary for my purposes. I recommend reading the first 11 steps of his guide, implementing techniques you think apply to yourself.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2021-08-18-21-addictive-tech/CoachTony_Guide.png&quot; alt=&quot;The first 11 steps, and the most important&quot; /&gt;
+&lt;sub&gt;&lt;sup&gt;Screenshot from the guide. The first 11 steps are the most important&lt;sub&gt;&lt;sup&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/p&gt;
+
+&lt;p&gt;Some of these steps have changed my relationship with my phone entirely. You might say “wow, this is a long guide, I don’t have time for this!”, but I promise that the 30-45 minutes this takes will pay dividends in the future.&lt;/p&gt;
+
+&lt;p&gt;Some of my biggest take-aways from the article:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Turning off all notifications for (almost) all apps is incredibly helpful&lt;/li&gt;
+  &lt;li&gt;Look at your Screentime every night: you can’t decrease a metric you aren’t paying attention to.&lt;/li&gt;
+  &lt;li&gt;The goal is to&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;On top of Coach Tony’s guide, I have a few other recommendations.&lt;/p&gt;
+
+&lt;h2 id=&quot;grayscale&quot;&gt;Grayscale&lt;/h2&gt;
+
+&lt;p&gt;A phone should just be a tool, but it’s a helluva lot more interesting to look at than a hammer or screwdriver. A lot of that appeal comes from the vibrant colors. Putting my phone into grayscale makes it legitimately boring to use, and therefore significantly less addictive.&lt;/p&gt;
+
+&lt;p&gt;Putting your phone into grayscale:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Accessibility &amp;gt; Display and Text Size &amp;gt; Color Filters &amp;gt; On &amp;gt; Grayscale&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This setting is hidden, making it a pain to turn off (this is a plus). If you can leave your phone on grayscale for more than a week, let me know. I always remove it at some point to look at photos and forget to put it back on.&lt;/p&gt;
+
+&lt;h2 id=&quot;content-restrictions-on-all-your-apps&quot;&gt;Content Restrictions on all your apps.&lt;/h2&gt;
+
+&lt;p&gt;You can add a screen time password onto your phone and apply it to certain apps during certain time periods. I have downtime scheduled from 9am-7pm.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2021-08-18-21-addictive-tech/Screentime2.png&quot; alt=&quot;Screentime&quot; /&gt;
+&lt;sub&gt;&lt;sup&gt;Screen time settings. TIL that grayscale doesn’t show in screenshots. &lt;sub&gt;&lt;sup&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/p&gt;
+
+&lt;p&gt;The nice thing about scheduled downtime is that I can still access my apps with limits, I just need to enter a password and approve it for a set amount of time (15 minutes, an hour, all day). Yes, sometimes this is annoying, and yes, I bypass my limits regularly. But I find that at least half the time when I open an app to use it, I see the restriction and close my phone. These moments are worth the occasional inconvenience.&lt;/p&gt;
+
+&lt;p&gt;To turn on Down Time go to:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Settings &amp;gt; Screen Time &amp;gt; Downtime&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I also have permanent app limits set for things like Chrome and Instagram:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Settings &amp;gt; Screen Time &amp;gt; App Limits&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Lastly, I find that changing my screen time password every month helps me stay aware. Over time, my subconscious gets better at opening Instagram in search of dopamine, and interruptions from the normal pattern disrupt this.&lt;/p&gt;
+
+&lt;h2 id=&quot;set-up-messaging-on-your-computer&quot;&gt;Set up messaging on your computer&lt;/h2&gt;
+
+&lt;p&gt;One of the beautiful parts of technology is its ability to keep you connected to friends and family, people you care about. Especially when working from home, I find texting to be overwhelmingly positive, and not too distracting. I keep messages on my computer, which allows me to implement the next step easily.&lt;/p&gt;
+
+&lt;p&gt;If you’re on iPhone, iMessage makes this easy. Android is simple as well, following &lt;a href=&quot;https://support.google.com/messages/answer/7611075?hl=en&quot;&gt;this guide by Google&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;hide-your-phone&quot;&gt;Hide your phone&lt;/h2&gt;
+
+&lt;p&gt;If I can see my phone, it can still distract me. If I’m doing important/urgent work, then I can easily avoid distractions, but if I’m in a highly procrastinatory mood then my brain is in total flight-from-responsibilities mode. So, I take my phone and chuck it onto the couch. Or I put it in my silverware drawer. Sometimes I put it in the bathroom, and if it’s really bad, I put it in a first class envelope with my return address and drop it in the nearest mailbox (it’ll come back eventually, right?).&lt;/p&gt;
+
+&lt;p&gt;I’m kidding on the last part, but I’m serious when I say that this is plain and simple the most effective strategy when you’re trying to achieve deep work.&lt;/p&gt;
+
+&lt;p&gt;Sadly, sometimes with my phone in the other room, I still waste my own time on my computer.  The fucked up part about technology is that it makes it all too easy to avoid work. Laziness is rewarded with dopamine hits. Breaking procrastination is a muscle that gets stronger with time, technology helps me avoid working out this muscle.&lt;/p&gt;
+
+&lt;p&gt;Because of this, I’ve worked to implement similar strategies on my computer, so that I can own more of my time and not get stuck in procrastination cycles.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;computer-adaptations&quot;&gt;Computer Adaptations&lt;/h1&gt;
+
+&lt;p&gt;Phone’s are more addictive, but I need to use my laptop daily for my job. And, since I believe maintaining two separate computer environments is personally not a good use of my time, I also use my work computer for many leisure activities (mainly random side projects or watching Season 2 of Ted Lasso)&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. The downside of this dual-usage is that I can slip into Mis-use Patterns during work that I have developed outside of work. The boundaries blend.&lt;/p&gt;
+
+&lt;p&gt;What are the patterns I have sought to eliminate on my computer? Primarily, I’m looking to eliminate mindless patterns: going on Reddit when motivation slips or boredom strikes.  I don’t care to go so far as to remove any &lt;em&gt;possibility&lt;/em&gt; of a distraction - sometimes I want to browse Reddit, or I need a break. Have you ever been in a null from work and the next thing you know you’re on Reddit? That’s the sort of pattern I’m trying to disrupt.&lt;/p&gt;
+
+&lt;p&gt;What’s the goal then? Primarily, I want to remove &lt;em&gt;immediate&lt;/em&gt; access from sites that I’ve identified as dopamine hits, and do my best to block &lt;em&gt;unwanted&lt;/em&gt; solicitations from these sites. Solicitations are things like ads and feeds. Dopamine hits can really be anything. Finding them requires a bit more introspection.&lt;/p&gt;
+
+&lt;p&gt;Most of these tools involve Chrome extensions, because I personally use Chrome with a 3rd party search as default. &lt;a href=&quot;https://news.ycombinator.com/item?id=26765493&quot;&gt;Plenty of discussion&lt;/a&gt; is out there about the pro’s and con’s of switching, however I still haven’t yet made the jump.&lt;/p&gt;
+
+&lt;p&gt;Let’s get started!&lt;/p&gt;
+
+&lt;h2 id=&quot;chrome-extensions&quot;&gt;Chrome extensions&lt;/h2&gt;
+
+&lt;h3 id=&quot;blocksite&quot;&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/blocksite-block-websites/eiimnmioipafcokbfikbljfdeojpcgbh&quot;&gt;BlockSite&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;I use Blocksite to block certain sites on my work computer. I find that not being able to go on these sites during work has not negatively impacted my life whatsoever. It saves me at least 15 minutes a day that otherwise would’ve been spent down a rabbit hole with no added value for the rest of my life.&lt;/p&gt;
+
+&lt;p&gt;Blocksite is self-explanatory to set up. It also gives the option to re-route from a blocked site to a site of your choice. Mine re-routes to &lt;a href=&quot;http://www.minimizedistraction.com/&quot;&gt;this website&lt;/a&gt;, a presentation by Google employees called “A Call to Minimize Distraction &amp;amp; Respect Users’ Attention”.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2021-08-18-21-addictive-tech/BlockSite.png&quot; alt=&quot;Blocksite reroutes me to this Google presentation&quot; /&gt;
+&lt;sub&gt;&lt;sup&gt;Blocksite reroutes me to this Google presentation&lt;sub&gt;&lt;sup&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/p&gt;
+
+&lt;p&gt;If I need to use a website I have blocked, I can open it in Safari. The upsides here are that I’m usually not logged into the site in question, and Safari isn’t in my regular rotation, so it’s several extra steps. The first time BlockSite re-routed me from Reddit to the Google Presentation I felt so bamboozled I just got right back to work.&lt;/p&gt;
+
+&lt;h3 id=&quot;unhook&quot;&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/unhook-remove-youtube-rec/khncfooichmfjbepaaaebmommgaepoid&quot;&gt;Unhook&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Unhook removes YouTube’s recommended videos. I can’t recommend it enough. Before installing, go and subscribe to any channels you actually care about.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2021-08-18-21-addictive-tech/YouTubeUnhook.png&quot; alt=&quot;Example of my YouTube setup&quot; /&gt;
+&lt;sub&gt;&lt;sup&gt;Unhook removes all recommended videos - here is the undisturbed view from my favorite channel&lt;sub&gt;&lt;sup&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/p&gt;
+
+&lt;p&gt;With Unhook, if you open YouTube to search for something important like a tech tutorial, you won’t get distracted away from your objective. If you open YouTube out of boredom, you’ll probably just leave and do something else instead.&lt;/p&gt;
+
+&lt;h3 id=&quot;news-feed-eradicator&quot;&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/news-feed-eradicator/fjcldmjmjhkklehbacihaiopjklihlgg?hl=en&quot;&gt;News Feed Eradicator&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;The News Feed Eradicator nixes feeds for Instagram, Facebook, Reddit, and a few other apps. Personally, I can’t yet bring myself to delete my social media. Sometimes I get important event invites, and I still use it to check for friends’ birthdays.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2021-08-18-21-addictive-tech/InstagramBlock.png&quot; alt=&quot;News Feed Eradicator&quot; /&gt;
+&lt;sub&gt;&lt;sup&gt;News Feed Eradicator replaces your feeds with quotes&lt;sub&gt;&lt;sup&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;adblocker&quot;&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/adblock-plus-free-ad-bloc/cfhdojbkjhnklbpkdaibdccddilifddb&quot;&gt;AdBlocker&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;I think advertisements are insidious and I try and block as many as I can. If I actually need a novel product, I’m sure that I’ll run across it eventually - I don’t need a company sneaking in through my interests to tell me that I need something. I don’t find myself distracted by ads, but they’re designed to catch your eye and they can still interrupt your train of thought.&lt;/p&gt;
+
+&lt;h3 id=&quot;pause&quot;&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/pause-stop-mindless-brows/ljfdccdjpfjpfjbpdiihanpodilolofh?hl=en&quot;&gt;Pause&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;One of my newer extensions and a favorite of mine is Pause. It adds a 5 second pause before getting on a site. The default list of sites is very thorough, but you can also add new sites.&lt;/p&gt;
+
+&lt;p&gt;If you’re at all familiar with the &lt;a href=&quot;https://theconversation.com/snorted-injected-or-smoked-it-can-affect-a-drugs-addictiveness-45281&quot;&gt;psychology of addiction&lt;/a&gt;, you might know that the length of time between stimulus and reward is a key component. One of the reasons heroin is so addictive is because there is an almost instantaneous reward immediately after injection.&lt;/p&gt;
+
+&lt;p&gt;Pause makes variable rewards like news feeds less addictive, by adding in a short pause. Furthermore, the green screen at the start encourages me to take a moment for myself and breathe. THe The user experience is fantastic.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2021-08-18-21-addictive-tech/Pause.png&quot; alt=&quot;Pause&quot; /&gt;
+&lt;sub&gt;&lt;sup&gt;Pause Chrome Extension&lt;sub&gt;&lt;sup&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/p&gt;
+
+&lt;p&gt;If you try out their pay-to-play product “Freedom”, let me know. I’m considering upgrading.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;email-and-messaging&quot;&gt;Email and Messaging&lt;/h2&gt;
+
+&lt;p&gt;Visual distractions fall primarily into the category of solicitations. I’ve found that some of my best work comes when I have Slack closed out and I’m missing dozens of non-urgent messages. Furthermore, I haven’t discerned any real benefit from checking my email every time a new message pops up - with my current job, rarely is a message so important that it can’t go more than an hour without being seen. There are some exceptions - doing a deployment/software release/any other “on call” task - however my &lt;em&gt;default&lt;/em&gt; is always-off.&lt;/p&gt;
+
+&lt;h3 id=&quot;slackteams&quot;&gt;Slack/Teams&lt;/h3&gt;
+
+&lt;p&gt;Most organizations use Slack or Teams. I’ve used both, prefer neither, and find that the settings for most messaging app are pretty granular. Here are the settings I look for. 
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. Removing badges&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I have a compulsive hatred for badges. I find that they are impossible to ignore, which violates my philosophy of batch-checking messages on my own schedule.&lt;/p&gt;
+
+&lt;!-- Instructions --&gt;
+
+&lt;p&gt;&lt;strong&gt;2. Optimizing Notifications&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;My philosophy with notifications is “always-off by default”. Spending 15 minutes on your notifications settings is worth it in the long run. Here are some example settings from myself&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Direct Messages and Mentions show notifications, since these are usually important&lt;/li&gt;
+  &lt;li&gt;Most of my slack channels are muted by default.&lt;/li&gt;
+  &lt;li&gt;DMs and Mentions still show through muted channels.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;3. Cmd + Q (On Mac)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I close Slack regularly when I need to get urgent work done. On a Mac, this is as simple as Cmd + Q. Usually when I try and do this I change my Slack status, just in case someone messaging me is expecting an immediate response. &lt;strong&gt;These are my most productive times&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;email&quot;&gt;Email&lt;/h3&gt;
+
+&lt;p&gt;My current job at Tempus is extremely low email volume - maybe 15-20 emails on a busy day, nearly all from GitHub. I get 5-10 emails a week from colleagues and Tempus. We use gmail and I have no email strategy because I don’t need it.&lt;/p&gt;
+
+&lt;p&gt;My previous job was the opposite - Microsoft Suite, and at least 100 emails a day. This required a different strategy, so I’ll talk about it.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Removing all email notifications.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You simply don’t need notifications on email. Ever. Maybe other jobs aren’t like this, but in any organization with a messaging service (such as slack), urgent requests are not routed through email. Therefore, I recommend keeping email closed and as un-distracting as possible. Otherwise, you’ll end up spending every hour of your job waiting for, then responding to, emails, with no time. For me, I end up compulsively checking email when I’m out of a deep-work state, or right before meetings. If disabling notifications means you forget checking your email, block off 4x15 minutes throughout the day on your calendar to do so.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Clean out your subscriptions.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;When I see an email that is unimportant, I take the extra 5 seconds to unsubscribe and block. This pays dividends in the future, and I recommend getting in the habit of keeping your email inbox as sacred of a space as possible.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;App Scripts to manage your inbox&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;If you’re using gmail, you can design &lt;a href=&quot;https://script.google.com/home&quot;&gt;custom scripts&lt;/a&gt; to modify your email inbox in particular ways. This has nothing to do with tech addiction, only ease of use, and is therefore out of the scope of this guide. I can, however, provide an example that I use -&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://gist.github.com/benbjurstrom/00cdfdb24e39c59c124e812d5effa39a&quot;&gt;PurgeOldEmails&lt;/a&gt; is a script that Ben Bjustrom wrote - it automatically deletes emails that are not flagged/starred/marked as important after one week. I implemented this with a few tweaks and so far have had no problems.&lt;/p&gt;
+
+&lt;h3 id=&quot;calendar&quot;&gt;Calendar&lt;/h3&gt;
+
+&lt;p&gt;Calendar notifications are always-on by design, otherwise your calendar is not very useful.&lt;/p&gt;
+
+&lt;p&gt;On Microsoft Suite, there sadly is not the granularity to distinguish between email notifications and calendar notifications. I chose to disable all notifications at the cost of being late to meetings and sometimes missing them altogether. The upside of this was that any meeting I missed where my presence was actually needed, I would usually get a Direct Message asking where I was, and any meeting I wasn’t required at I would miss without any consequence.&lt;/p&gt;
+
+&lt;p&gt;With Google Suite, no notification settings are required.&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusions&quot;&gt;Conclusions&lt;/h1&gt;
+
+&lt;p&gt;The tools I outline above might seem outlandish to some people, and I wouldn’t disagree. However, I find they help me get more done on a daily basis, and stay distraction free without going so far as destroying my phone and living like Thoreau in the woods.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2021-08-18-21-addictive-tech/TheRing.jpeg&quot; alt=&quot;Lotr&quot; /&gt;
+&lt;sub&gt;&lt;sup&gt;Sometimes this is how I feel about my smartphone&lt;sub&gt;&lt;sup&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/p&gt;
+
+&lt;p&gt;Many of these sites and apps are designed to be addictive. The metric that engineers at any site from Facebook to Reddit optimize for is &lt;em&gt;time on screen&lt;/em&gt;. The downstream effect of this is addictive technology, the more addictive the more profitable, with the burden passed on to the user &lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. Some people might not need all these steps. But for those of us with addictive personalities, certain guard rails can increase productivity and give you back some of your head space.&lt;/p&gt;
+
+&lt;h2 id=&quot;additional-food-for-thought&quot;&gt;Additional food for thought&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.washingtonpost.com/national/health-science/can-reading-a-novel-change-your-brain-a-study-of-brain-scans-suggest-yes/2014/01/06/171d9e6e-7163-11e3-8b3f-b1666705ca3b_story.html&quot;&gt;Reading a novel can change your neurochemistry&lt;/a&gt;, so &lt;a href=&quot;https://www.businessinsider.com/what-your-smartphone-is-doing-to-your-brain-and-it-isnt-good-2018-3&quot;&gt;what can phone addiction do&lt;/a&gt;? (Also, wouldn’t we rather spend that time changing our brain with a novel?)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.entrepreneur.com/article/360320&quot;&gt;We spend a lot of time on our phones&lt;/a&gt;. 3 hours a day is 21 hours a week (almost a full day). It’s 1,095 hours a year. &lt;a href=&quot;https://blog.thelinguist.com/how-long-should-it-take-to-learn-a-language/#:~:text=FSI%20research%20indicates%20that%20it,for%20difficult%20languages%2072%20days.&quot;&gt;Language fluency in “easy” languages takes ~480 hours&lt;/a&gt;. What else could you use this time for?&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;sub&gt;&lt;sup&gt;Disclaimer: I do not do stupid or illegal things on my work computer that could potentially compromise my companies OpSec. I’m talking like, checking my personal email, watching TV, listening to music, writing. It’s just easier than setting up two work stations for productivity in my small NYC apartment. &lt;sub&gt;&lt;sup&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/sup&gt;&lt;/sub&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;sub&gt;&lt;sup&gt;The Netflix documentary “The Social Dilemma” does a great job elaborating. &lt;sub&gt;&lt;sup&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/sup&gt;&lt;/sub&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
  </entry>
- {% endfor %}
+ 
+ <entry>
+   <title>New York, New York</title>
+   <link href="https://noahkennedy.co/2021/08/06/ny-ny/"/>
+   <updated>2021-08-06T00:00:00+00:00</updated>
+   <id>https://noahkennedy.co/2021/08/06/ny-ny</id>
+   <content type="html">&lt;p&gt;A word to the wise wise - don’t start your New York lease on July 1st. And if you do, just don’t move in on the first weekend of the month like everyone else.  &lt;!--excerpt--&gt;&lt;/p&gt;
+
+&lt;p&gt;As I learned the hard way, July 1st leases just cost more than any other lease. I’m not going to disclose exactly how much I’m paying for rent, but I will say that my dad described it as “similar in size to a mortgage”.&lt;/p&gt;
+
+&lt;p&gt;All in all though, I can’t complain. We found a dream apartment with an enormous patio, two whole bathrooms &lt;em&gt;and&lt;/em&gt; a washer/dryer &lt;em&gt;in unit&lt;/em&gt;! We’re living in luxury over here.&lt;/p&gt;
+
+&lt;p&gt;Tempus gave a generous relocation subsidy that covered movers, a U-haul, and most of my rent for the month. So, on the second weekend of July, Bugg and I drove up with all of our possessions and moved in.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2021-08-06-ny-ny/Uhaul.png&quot; alt=&quot;U-haul truck full of stuff&quot; width=&quot;700px&quot; /&gt;
+&lt;sub&gt;&lt;sup&gt;A U-haul full of our stuff. 80% Bugg’s stuff, however 75% of the bikes were mine.&lt;sub&gt;&lt;sup&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;the-move&quot;&gt;The move&lt;/h2&gt;
+
+&lt;p&gt;In a past life I must have been a tuk-tuk driver in Bangkok, or so I was told by Bugg’s dad who sat shotgun. Knuckles white, I relentlessly cut people off, love-tapped the wall in the Holland tunnel, and turned on red with reckless abandon. Secretly, I loved the rush and chaos of driving a large truck in the crowded New York streets.&lt;/p&gt;
+
+&lt;p&gt;We spent a week in the city before making our way back down to DC. When I returned to the District, my old roommate Lucy and I did some catching up - we both thought I had already been gone several weeks, but it had only been 6 days.&lt;/p&gt;
+
+&lt;p&gt;DC was pleasant. I got in one last ride with Grayson, finally sold my car, and said a few more goodbyes. Bugg and I drove up early the next Sunday.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2021-08-06-ny-ny/DriveDown.jpg&quot; alt=&quot;Driving back down&quot; width=&quot;700px&quot; /&gt;
+&lt;sub&gt;&lt;sup&gt;Driving back up from DC.&lt;sub&gt;&lt;sup&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;my-initial-thoughts-on-new-york&quot;&gt;My initial thoughts on New York&lt;/h2&gt;
+
+&lt;p&gt;Everything you hear about the concrete jungle is mostly true. The smell of garbage is overpowering, everyone around you is rushing like their life depends on it, and it only takes a few weeks before your jaywalking becomes borderline dangerous. Finally, expect to run into every single person you know that lives in New York, as well as a few friends you thought still lived elsewhere. As Bugg says, “this is just further evidence that we live in a simulation”.&lt;/p&gt;
+
+&lt;p&gt;Some stereotypes have proven to be false. The people are busy, but they aren’t unkind. My interpretation is that everyone has low grade anxiety from lack of nature, and is generally in a bad mood from standing in lines at all hours of the day (seriously! Trader Joe’s had a line at 1:30pm on a Thursday). But, more often than getting screamed at, I encounter instances of a strangers humanity shining through the grime. An amiable cashier at Trader Joe’s passionately describes his favorite taco, a small shop in Brooklyn that’s run out of an Air Stream trailer. An elderly italian man cheers me on every Tuesday during my track workouts on the East River, giving fist bumps and praise. The bike shop owner who hands Bugg and I delicious homemade breakfast burritos for free while we’re bonking on our way back from the 9W ride.&lt;/p&gt;
+
+&lt;p&gt;My resolution is to not become one of jaded residents, but rather another excellent stranger. On the free burrito ride, Bugg and I struck up a conversation with another cyclist named Ilya. Calm and good natured, Ilya has lived in the 5 boroughs for 31 years. He talked about his hobbies and passions - PingPod, a NYC ping-pong startup where he’s the CTO, and bringing friends along on his bike rides.&lt;/p&gt;
+
+&lt;p&gt;The first thing Ilya said to us was “You probably shouldn’t run that red light in the future, that bus nearly took you out”, which was true. But the more memorable thing he said was on the subject of not needing a bell on his bike. “I personally don’t use a bell when I ride”, Ilya said. “My bell is my voice and a friendly smile, that usually seems to do the trick”.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2021-08-06-ny-ny/WestSideHighway.jpg&quot; alt=&quot;A tale of two cities&quot; width=&quot;700px&quot; /&gt;
+&lt;sub&gt;&lt;sup&gt;View from the West Side Highway bike path.&lt;sub&gt;&lt;sup&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/p&gt;
+
+&lt;p&gt;New York is an interesting place. So far the highs have been high, and the lows low. With an overwhelming amount to do, it’s easy to get lost (geographically, spiritually, existentially). To survive, I’m finding that you must be purposeful. In a way, that’s one of my favorite parts about the city. It forces you to uncover what exactly it is you want from your job, your friends, your life. You can float endlessly, unintentionally, but somewhere along the line you’re going to need to figure out which of the infinite activities you actually want to devote time to.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2021-08-06-ny-ny/Rooftop_BuggNoah.jpg&quot; alt=&quot;Bugg and I with the Financial District Skyline in the back&quot; width=&quot;700px&quot; /&gt;
+&lt;sub&gt;&lt;sup&gt;Bugg and I with the Financial District Skyline in the back&lt;sub&gt;&lt;sup&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2021-08-06-ny-ny/Rooftop_NoahSoph.jpg&quot; alt=&quot;Sophia and I on her roof&quot; width=&quot;700px&quot; /&gt;
+&lt;sub&gt;&lt;sup&gt;Long time friend Sophia, helping make me look taller than I actually am. Sophia has been my NYC guide, my rock, my closest friend this past month. &lt;sub&gt;&lt;sup&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2021-08-06-ny-ny/Marias_BanhMi.jpg&quot; alt=&quot;Excellent sandwich, excellent company&quot; width=&quot;700px&quot; /&gt;
+&lt;sub&gt;&lt;sup&gt;Excellent sandwich, excellent company. At my favorite local restaurant Sao Mai with Maria&lt;sub&gt;&lt;sup&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2021-08-06-ny-ny/BigBite.gif&quot; alt=&quot;Excellent sandwich, excellent company&quot; width=&quot;700px&quot; /&gt;
+&lt;sub&gt;&lt;sup&gt;I almost cried while eating this. This sandwich marked the turn-around point of New York - I finally got a hold on my asthma, and remembered that I exercise too much to forget to eat&lt;sub&gt;&lt;sup&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Leveraging Jekyll Paginate v2</title>
+   <link href="https://noahkennedy.co/2021/07/26/paginate2/"/>
+   <updated>2021-07-26T00:00:00+00:00</updated>
+   <id>https://noahkennedy.co/2021/07/26/paginate2</id>
+   <content type="html">&lt;p&gt;GitHub Pages, the Jekyll website generator used for this site, generally works pretty well. One of the major upsides is simplicity, but like all simplistic coding tools, there are guard rails in place as well. &lt;!--excerpt--&gt; Simplicity comes at a cost. In our case, only &lt;a href=&quot;https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll&quot;&gt;8 jekyll plugins&lt;/a&gt; are supported by GH pages.&lt;/p&gt;
+
+&lt;h1 id=&quot;summary&quot;&gt;Summary&lt;/h1&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;The purpose of this guide is to provide a workaround. By building your site using travis-CI, and deploying the built-up webpage to GH from travis, you can bypass GH Pages inability to build a site using unsupported plugins. This workaround took me ~4-6 hours of rather frustrating work, and if you do not absolutely need the workaround I encourage you to not make your life more difficult. I would also like to note that I’m making this guide after the fact, trying to fill in the pieces, and it most likely won’t be perfect. Please reach out if you find errors in my documentation and I’ll fill them in.&lt;/p&gt;
+
+&lt;h2 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h2&gt;
+
+&lt;p&gt;The state of the problem is this: running the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll build&lt;/code&gt; takes the scaffolding that you write, and turns it into a full-fledged website in your _site folder. When you push to your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; branch on GitHub, this build process is done in some fashion by GitHub. Since GitHub Pages only supports 8 plugins, if your site leverages an un-supported plugin, GH pages will simply not know how to use the plugin and therefore your site will break! This is not ideal behavior.&lt;/p&gt;
+
+&lt;p&gt;The general idea of the problems is this: instead of having GitHub deal with your build process and fumble your plugin usage, you can use a CI/CD tool like &lt;a href=&quot;https://travis-ci.com/&quot;&gt;Travis-CI&lt;/a&gt;. With a correctly configured Travis-CI deployment, pushing to GitHub triggers a CI job, which runs a script to build your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_site&lt;/code&gt; folder, and then simply copies the contents of your newly built site into the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; branch. So, the Travis-CI container builds your site for you, and just drops the now-static webpages into GitHub.&lt;/p&gt;
+
+&lt;p&gt;I’m not in the business of redundancy (or plagiarism for that matter), so I’ll start by providing the resources I used, and finish by providing some of my notes and code that helped fill in the gaps.&lt;/p&gt;
+
+&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ayastreb.me/deploy-jekyll-to-github-pages-with-travis-ci/&quot;&gt;High level guide to deploying to gh-pages via Travis CI&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;This guide is very useful for understanding the workflow and setting up a framework to build off of, but is lacking some details.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.loumarven.dev/2020/02/23/getting-a-good-old-jekyll-theme-to-work-on-gitlab-pages/&quot;&gt;This guide by Lou Marven helped me build out my CI/CD script&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;This guide may not be needed, I used it primarily to fix jekyll-paginate, which I had broken somehow&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.travis-ci.com/user/deployment/pages/&quot;&gt;Travis CI documentation on Github Pages Deployments&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Travis CI is well done, and I used this to get background information and ultimately inform certain decisions.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;filling-in-the-gaps&quot;&gt;Filling in the gaps&lt;/h1&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;After following Resource #1 and reading through the other two resources, your Travis-CI deployment still probably won’t work. The two kinds of issues I came across were dependency/bundler issues, and GitHub authentication issues. All in all, it was a great exercise in debugging, but I’m glad to be done.&lt;/p&gt;
+
+&lt;h3 id=&quot;github-authentication&quot;&gt;GitHub Authentication&lt;/h3&gt;
+
+&lt;p&gt;The above guides don’t explain how to give the proper permissions to Travis-CI. At a high level, these are the steps&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Generate a github Personal Access Token (PAT) &lt;a href=&quot;https://github.com/settings/tokens&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Encrypt your PAT using the instructions &lt;a href=&quot;https://docs.travis-ci.com/user/environment-variables#encrypting-environment-variables&quot;&gt;here&lt;/a&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;travis encrypt GH_TOKEN=&quot;PAT_goes_here_keep_the_parentheses!!!&quot; --add&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Define the variable GH_TOKEN in your Travis Repository settings using the instructions &lt;a href=&quot;https://docs.travis-ci.com/user/environment-variables#defining-variables-in-repository-settings&quot;&gt;here&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Truthfully I’m not sure if steps #2 and #3 are redundant. The bold can skip step 3 and return later if Auth isn’t working.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;After this, GitHub should authenticate properly. If you’re running into errors, you can check if Auth is at fault by going to your GitHub PAT page and seeing if GitHub has ever used it.&lt;/p&gt;
+
+&lt;h3 id=&quot;code-snippets&quot;&gt;Code snippets&lt;/h3&gt;
+
+&lt;p&gt;There are are a few files that are required for your travis project to successfully build.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;cibuild script, a simple bash script that does all the heavy lifting and generates/pushes your website.&lt;/li&gt;
+  &lt;li&gt;travis.yml file, which gives some directions and configures the job that happens when you push to Travis.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The guide by Anatoliy Yastreb fills these in, but in my opinion misses some steps. I can’t say my code is better - I think it’s more redundant - but these are my files.&lt;/p&gt;
+
+&lt;h4 id=&quot;cibuild-script&quot;&gt;cibuild script&lt;/h4&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#!/bin/bash
+
+# skip if build is triggered by pull request
+if [ $TRAVIS_PULL_REQUEST == &quot;true&quot; ]; then
+  echo &quot;this is PR, exiting&quot;
+  exit 0
+fi
+
+# enable error reporting to the console
+set -e
+
+# cleanup &quot;_site&quot;
+rm -rf _site
+mkdir _site
+
+# clone remote repo to &quot;_site&quot;
+git clone https://${GH_TOKEN}@github.com/noahfkennedy/noahfkennedy.github.io.git --branch gh-pages _site
+
+# build with Jekyll into &quot;_site&quot;
+bundle install
+bundle exec jekyll build
+
+# push
+cd _site
+git config user.email &quot;noah.kennedy1@gmail.com&quot;
+git config user.name &quot;Noah Kennedy&quot;
+git config --list 
+git add --all
+git commit -m &quot;Travis #$TRAVIS_BUILD_NUMBER&quot;
+git push --force origin gh-pages
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;travisyml-file&quot;&gt;travis.yml file&lt;/h4&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;language: ruby
+dist: trusty
+rvm:
+- 2.5
+before_install:
+  - yes | gem update --system --force
+  - gem install bundler:2.2.24
+branches:
+  only:
+  - master
+before_script:
+  - chmod +x ./script/cibuild
+after_script:
+  - git config credential.helper &quot;store --file=.git/credentials&quot;
+  - echo &quot;https://${GH_TOKEN}:@github.com&quot; &amp;gt; .git/credentials
+script: &quot;./script/cibuild&quot;
+exclude:
+- vendor
+sudo: false
+env:
+  global:
+  - secure: my_variable_goes_here_but_travis_fills_this_in_for_you!
+  jobs:
+  - USE_NETWORK=false
+  - secure: &quot;&amp;lt;you can also put encrypted vars inside matrix&amp;gt;&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;running-the-script&quot;&gt;Running the script&lt;/h3&gt;
+&lt;p&gt;In order to kick off a Travis build, you need to push to your master branch.&lt;/p&gt;
+
+&lt;p&gt;Within the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;travis.yml&lt;/code&gt; file, you set the branch to run on, so you can make this any other branch. I like master, because I only really want to do major builds. The base plan of Travis comes with a limited number of credits - I used about 25% of mine just trying to get it to work - so I would rather not waste all that compute.&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;Ultimately, you will probably need to do your own debugging. In a way, it was a fun exercise in debugging, something I don’t need to do as much at my current job. If you notice any inconsistencies or see any spots in my code that are wrong (I’m sure there are many), feel free to reach out at &lt;a href=&quot;mailto:noah.kennedy1@gmail.com&quot;&gt;noah.kennedy1@gmail.com&lt;/a&gt; and I’ll do my best to modify this documentation.&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>We're back!</title>
+   <link href="https://noahkennedy.co/2021/07/13/we-are-back/"/>
+   <updated>2021-07-13T00:00:00+00:00</updated>
+   <id>https://noahkennedy.co/2021/07/13/we-are-back</id>
+   <content type="html">&lt;p&gt;It’s been about 6 months since I first tried to kick off a personal website. There has been some progress - &lt;!--excerpt--&gt; I published an article, created a few pages, and tried for several weeks without results to add a LinkedIn icon to my sidebar. But at some point the progress stopped.&lt;/p&gt;
+
+&lt;p&gt;The beginning of the end was likely from getting hung up on LinkedIn URLs, however the full collapse definitely stemmed from combination of unrelated factors (something something &lt;em&gt;life got in the way&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;I think there are two good lessons here -&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;A waterfall approach to personal websites, or software engineering in general, simply doesn’t work. In other words, I became caught up in the fine details of making my site ‘perfect’, and failed to work on what I actually set out to do: write out, flesh out, and publish my thoughts out. This is loosely related to an interesting article a colleague sent me, about the &lt;a href=&quot;https://blog.crisp.se/2016/01/25/henrikkniberg/making-sense-of-mvp&quot;&gt;Skateboard Minimum Viable Product&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Creativity is, as Abraham Maslow once suggested, only possible if your basic needs and psychological needs are both met. From my seat of at the zenith of privilege, where the majority of the pyramid is filled in, there’s kind of an added layer: if life is at all hectic, it becomes pretty hard to be creative (maybe this is just me).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;As I said above, Life got in the way, and I think that’s where any and all creative progress came to a halt. Quite a few things happened:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;During February and March, I devoted most of my free time to triathlon, training and racing for the USA Triathlon Elite Draft Legal Race in Clermont, FL.&lt;/li&gt;
+  &lt;li&gt;During March and April, I was on the hunt - job searching and interviews took up most of my free time outside of training and work.&lt;/li&gt;
+  &lt;li&gt;During April I was traveling - after quitting my job at Deloitte, I took advantage of my newfound freedom and vaccination status to fly out West and see good friends.&lt;/li&gt;
+  &lt;li&gt;In May and June I was consumed fully by a new job at a precision medicine company called &lt;a href=&quot;https://www.tempus.com/&quot;&gt;Tempus&lt;/a&gt;, as well as a few miscallaneous triathlons.&lt;/li&gt;
+  &lt;li&gt;In June and early July, I was helping my parents pack up the family home so they could travel for retirement, and planning my own move to Manhattan. There was also some trauma - a shooting directly outside of my row house in DC left me pretty shaken, with several of my windows shot through, my car with bullets in it, and an innocent bystander dying only 20 feet away from my bedroom.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A lot happened in the last 6 months, and although many of these things were overwhelmingly positive experiences, they left me without the stability needed to pursue creative projects. I would say this was good and bad: life is best when it ebs and flows, and stability != adventure. Both are full of living, just in different ways. I think to be more specific about what factors prevented me from “creative extracurricular work”, the #1 factor was definitely the new job. Learning 40+ hours a week puts your brain in a state where the only problems it can really think about are the ones from 9-5. Now that I’m not constantly learning, my brain has a bit more space to roam, and explore the outer edges.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Welcome to my Site</title>
+   <link href="https://noahkennedy.co/2021/01/10/welcome-to-lanyon/"/>
+   <updated>2021-01-10T00:00:00+00:00</updated>
+   <id>https://noahkennedy.co/2021/01/10/welcome-to-lanyon</id>
+   <content type="html">&lt;p&gt;After messing around with github pages for a bit, and following a simple but effective &lt;a href=&quot;https://github.com/barryclark/jekyll-now&quot;&gt;guide by Barry Clark&lt;/a&gt; on how to host your first Jekyll site via Github, I decided to play around with a few more themes.&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
+
+&lt;p&gt;Barry’s guide was great, and I need to give him the kudos he deserves here. He convinced me that anyone with a propensity for coding and hacking should look at Jekyll blogs instead of Wordpress. He’s right - how can I blog about data engineering and coding on a blog that I wrote no code for?&lt;/p&gt;
+
+&lt;p&gt;I’ve moved on since Barry’s guide, since I wanted a bit more control over my own theme. I’m still figuring out how to achieve the same URL elegance without buying my own domain name just yet. The theme I’m using is Lanyon -&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Lanyon is an unassuming &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; theme that places content first by tucking away navigation in a hidden drawer. It’s based on &lt;a href=&quot;http://getpoole.com&quot;&gt;Poole&lt;/a&gt;, the Jekyll butler.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To be frank, I’m still figuring things out (partly due to an issue with a lack of sudo privileges on my main computer, thanks Deloitte), but I’m confident I’ll get there eventually.&lt;/p&gt;
+
+&lt;p&gt;I think this will serve my purposes, at least for now, and I love the bit of Jekyll &amp;amp; Hyde Fanfiction surrounding Jekyll, and the theme I’m using (Lanyon, built on Poole). My knowledge of Jekyll &amp;amp; Hyde is limited to the Runescape quest I did circa the 6th grade, so I think it’s time I open up the book for real.&lt;/p&gt;
+</content>
+ </entry>
+ 
 
 </feed>

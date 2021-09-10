@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Leveraging Jekyll Paginate v2 &middot; Noah Kennedy
+    
+  </title>
+
+  
+  <link rel="canonical" href="https://noahkennedy.co/2021/07/26/paginate2/">
+  
+
+  <link rel="stylesheet" href="https://noahkennedy.co/public/css/poole.css">
+  <link rel="stylesheet" href="https://noahkennedy.co/public/css/syntax.css">
+  <link rel="stylesheet" href="https://noahkennedy.co/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://noahkennedy.co/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="https://noahkennedy.co/public/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="https://noahkennedy.co/atom.xml">
+
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-146052-15', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+</head>
+
+
+  <body class="sidebar-overlay">
+
+    <!--
+  JavaScript to allow for post sorting by category
+  This works. Red highlighting is wrong
+-->
+<script type="text/javascript">
+  function filterUsingCategory(selectedCategory) {
+    var id = 0;
+    
+      var cats = ["all","tools-for-thought"]
+
+      var postDiv = document.getElementById(++id);
+      postDiv.style.display =
+        (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
+      var cats = ["all","personal"]
+
+      var postDiv = document.getElementById(++id);
+      postDiv.style.display =
+        (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
+      var cats = ["all","tech-docs"]
+
+      var postDiv = document.getElementById(++id);
+      postDiv.style.display =
+        (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
+      var cats = ["all","personal","ontology"]
+
+      var postDiv = document.getElementById(++id);
+      postDiv.style.display =
+        (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
+      var cats = ["all","personal","tech-docs"]
+
+      var postDiv = document.getElementById(++id);
+      postDiv.style.display =
+        (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
+  }
+</script>
+  
+
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Chemical Engineer by education, Data Engineer by trade. I geek out on biotech, endurance sports, and good coffee.</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="https://noahkennedy.co/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="https://noahkennedy.co/Triathlon/">Triathlon Coaching</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="https://noahkennedy.co/about/">About</a>
+        
+      
+    
+      
+    
+      
+        
+      
+    
+
+    <!-- <a class="sidebar-nav-item" href="/archive/v1.1.0. Still working on NK.v.2.zip">Download</a>
+    <a class="sidebar-nav-item" href="">GitHub project</a> -->
+    <!-- <span class="sidebar-nav-item">Currently v1.1.0. Still working on NK.v.2</span> -->
+
+
+  </nav>
+
+  <div class="sidebar-nav-item">
+    <br>
+    Sort posts by category
+    <p>
+      
+      
+        
+        <a id="all" onclick="filterUsingCategory(this.id)">
+          #all <br>
+        </a>
+      
+        
+        <a id="ontology" onclick="filterUsingCategory(this.id)">
+          #ontology <br>
+        </a>
+      
+        
+        <a id="personal" onclick="filterUsingCategory(this.id)">
+          #personal <br>
+        </a>
+      
+        
+        <a id="tech-docs" onclick="filterUsingCategory(this.id)">
+          #tech-docs <br>
+        </a>
+      
+        
+        <a id="tools-for-thought" onclick="filterUsingCategory(this.id)">
+          #tools-for-thought <br>
+        </a>
+      
+   </p>
+  </div>
+
+  <div class="sidebar-links">
+
+    <a href="https://instagram.com/noahfkennedy">
+        <img src="/assets/generics/linkedin-logo.png" alt="LinkedIn">
+    </a>
+    <a href="https://www.linkedin.com/in/noahfkennedy/">
+      <img src="/assets/generics/instagram-logo.png" alt="Instagram">
+    </a>
+    <a href="https://twitter.com/big_ben_clock">
+    <img src="/assets/generics/twitter-logo.png" alt="Note that I don't use my twitter">
+    </a>
+  </div>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2021. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Noah Kennedy</a>
+            <small>Based in N.Y.C</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">Leveraging Jekyll Paginate v2</h1>
+  <span class="post-date">26 Jul 2021</span>
+  <p>GitHub Pages, the Jekyll website generator used for this site, generally works pretty well. One of the major upsides is simplicity, but like all simplistic coding tools, there are guard rails in place as well. <!--excerpt--> Simplicity comes at a cost. In our case, only <a href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll">8 jekyll plugins</a> are supported by GH pages.</p>
+
+<h1 id="summary">Summary</h1>
+
+<hr />
+<p>The purpose of this guide is to provide a workaround. By building your site using travis-CI, and deploying the built-up webpage to GH from travis, you can bypass GH Pages inability to build a site using unsupported plugins. This workaround took me ~4-6 hours of rather frustrating work, and if you do not absolutely need the workaround I encourage you to not make your life more difficult. I would also like to note that I’m making this guide after the fact, trying to fill in the pieces, and it most likely won’t be perfect. Please reach out if you find errors in my documentation and I’ll fill them in.</p>
+
+<h2 id="problem-statement">Problem Statement</h2>
+
+<p>The state of the problem is this: running the command <code class="language-plaintext highlighter-rouge">jekyll build</code> takes the scaffolding that you write, and turns it into a full-fledged website in your _site folder. When you push to your <code class="language-plaintext highlighter-rouge">gh-pages</code> branch on GitHub, this build process is done in some fashion by GitHub. Since GitHub Pages only supports 8 plugins, if your site leverages an un-supported plugin, GH pages will simply not know how to use the plugin and therefore your site will break! This is not ideal behavior.</p>
+
+<p>The general idea of the problems is this: instead of having GitHub deal with your build process and fumble your plugin usage, you can use a CI/CD tool like <a href="https://travis-ci.com/">Travis-CI</a>. With a correctly configured Travis-CI deployment, pushing to GitHub triggers a CI job, which runs a script to build your <code class="language-plaintext highlighter-rouge">_site</code> folder, and then simply copies the contents of your newly built site into the <code class="language-plaintext highlighter-rouge">gh-pages</code> branch. So, the Travis-CI container builds your site for you, and just drops the now-static webpages into GitHub.</p>
+
+<p>I’m not in the business of redundancy (or plagiarism for that matter), so I’ll start by providing the resources I used, and finish by providing some of my notes and code that helped fill in the gaps.</p>
+
+<h2 id="resources">Resources</h2>
+<ol>
+  <li><a href="https://ayastreb.me/deploy-jekyll-to-github-pages-with-travis-ci/">High level guide to deploying to gh-pages via Travis CI</a>
+    <ul>
+      <li>This guide is very useful for understanding the workflow and setting up a framework to build off of, but is lacking some details.</li>
+    </ul>
+  </li>
+  <li><a href="https://www.loumarven.dev/2020/02/23/getting-a-good-old-jekyll-theme-to-work-on-gitlab-pages/">This guide by Lou Marven helped me build out my CI/CD script</a>
+    <ul>
+      <li>This guide may not be needed, I used it primarily to fix jekyll-paginate, which I had broken somehow</li>
+    </ul>
+  </li>
+  <li><a href="https://docs.travis-ci.com/user/deployment/pages/">Travis CI documentation on Github Pages Deployments</a>
+    <ul>
+      <li>Travis CI is well done, and I used this to get background information and ultimately inform certain decisions.</li>
+    </ul>
+  </li>
+</ol>
+
+<h1 id="filling-in-the-gaps">Filling in the gaps</h1>
+
+<hr />
+<p>After following Resource #1 and reading through the other two resources, your Travis-CI deployment still probably won’t work. The two kinds of issues I came across were dependency/bundler issues, and GitHub authentication issues. All in all, it was a great exercise in debugging, but I’m glad to be done.</p>
+
+<h3 id="github-authentication">GitHub Authentication</h3>
+
+<p>The above guides don’t explain how to give the proper permissions to Travis-CI. At a high level, these are the steps</p>
+<ol>
+  <li>Generate a github Personal Access Token (PAT) <a href="https://github.com/settings/tokens">here</a>.</li>
+  <li>Encrypt your PAT using the instructions <a href="https://docs.travis-ci.com/user/environment-variables#encrypting-environment-variables">here</a>.
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">travis encrypt GH_TOKEN="PAT_goes_here_keep_the_parentheses!!!" --add</code></li>
+    </ul>
+  </li>
+  <li>Define the variable GH_TOKEN in your Travis Repository settings using the instructions <a href="https://docs.travis-ci.com/user/environment-variables#defining-variables-in-repository-settings">here</a>
+    <ul>
+      <li>Truthfully I’m not sure if steps #2 and #3 are redundant. The bold can skip step 3 and return later if Auth isn’t working.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>After this, GitHub should authenticate properly. If you’re running into errors, you can check if Auth is at fault by going to your GitHub PAT page and seeing if GitHub has ever used it.</p>
+
+<h3 id="code-snippets">Code snippets</h3>
+
+<p>There are are a few files that are required for your travis project to successfully build.</p>
+
+<ol>
+  <li>cibuild script, a simple bash script that does all the heavy lifting and generates/pushes your website.</li>
+  <li>travis.yml file, which gives some directions and configures the job that happens when you push to Travis.</li>
+</ol>
+
+<p>The guide by Anatoliy Yastreb fills these in, but in my opinion misses some steps. I can’t say my code is better - I think it’s more redundant - but these are my files.</p>
+
+<h4 id="cibuild-script">cibuild script</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/bash
+
+# skip if build is triggered by pull request
+if [ $TRAVIS_PULL_REQUEST == "true" ]; then
+  echo "this is PR, exiting"
+  exit 0
+fi
+
+# enable error reporting to the console
+set -e
+
+# cleanup "_site"
+rm -rf _site
+mkdir _site
+
+# clone remote repo to "_site"
+git clone https://${GH_TOKEN}@github.com/noahfkennedy/noahfkennedy.github.io.git --branch gh-pages _site
+
+# build with Jekyll into "_site"
+bundle install
+bundle exec jekyll build
+
+# push
+cd _site
+git config user.email "noah.kennedy1@gmail.com"
+git config user.name "Noah Kennedy"
+git config --list 
+git add --all
+git commit -m "Travis #$TRAVIS_BUILD_NUMBER"
+git push --force origin gh-pages
+</code></pre></div></div>
+
+<h4 id="travisyml-file">travis.yml file</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>language: ruby
+dist: trusty
+rvm:
+- 2.5
+before_install:
+  - yes | gem update --system --force
+  - gem install bundler:2.2.24
+branches:
+  only:
+  - master
+before_script:
+  - chmod +x ./script/cibuild
+after_script:
+  - git config credential.helper "store --file=.git/credentials"
+  - echo "https://${GH_TOKEN}:@github.com" &gt; .git/credentials
+script: "./script/cibuild"
+exclude:
+- vendor
+sudo: false
+env:
+  global:
+  - secure: my_variable_goes_here_but_travis_fills_this_in_for_you!
+  jobs:
+  - USE_NETWORK=false
+  - secure: "&lt;you can also put encrypted vars inside matrix&gt;"
+</code></pre></div></div>
+
+<h3 id="running-the-script">Running the script</h3>
+<p>In order to kick off a Travis build, you need to push to your master branch.</p>
+
+<p>Within the <code class="language-plaintext highlighter-rouge">travis.yml</code> file, you set the branch to run on, so you can make this any other branch. I like master, because I only really want to do major builds. The base plan of Travis comes with a limited number of credits - I used about 25% of mine just trying to get it to work - so I would rather not waste all that compute.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>Ultimately, you will probably need to do your own debugging. In a way, it was a fun exercise in debugging, something I don’t need to do as much at my current job. If you notice any inconsistencies or see any spots in my code that are wrong (I’m sure there are many), feel free to reach out at <a href="mailto:noah.kennedy1@gmail.com">noah.kennedy1@gmail.com</a> and I’ll do my best to modify this documentation.</p>
+
+
+</div>
+
+
+<div class="related">
+  <h2>Related posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2021/08/18/21-addictive-tech/">
+            Optimizing Your Tech Stack for Productivity
+            <small>18 Aug 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2021/08/06/ny-ny/">
+            New York, New York
+            <small>06 Aug 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2021/07/13/we-are-back/">
+            We're back!
+            <small>13 Jul 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script src='/public/js/script.js'></script>
+  </body>
+</html>
