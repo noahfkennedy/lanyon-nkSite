@@ -50,6 +50,14 @@
   function filterUsingCategory(selectedCategory) {
     var id = 0;
     
+      var cats = ["all","tools-for-thought","ontology"]
+
+      var postDiv = document.getElementById(++id);
+      postDiv.style.display =
+        (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
       var cats = ["all","tools-for-thought"]
 
       var postDiv = document.getElementById(++id);
@@ -127,6 +135,10 @@
         
       
     
+      
+    
+      
+        
       
     
       
