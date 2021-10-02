@@ -50,6 +50,14 @@
   function filterUsingCategory(selectedCategory) {
     var id = 0;
     
+      var cats = ["all","personal","ontology"]
+
+      var postDiv = document.getElementById(++id);
+      postDiv.style.display =
+        (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
       var cats = ["all","tools-for-thought","ontology"]
 
       var postDiv = document.getElementById(++id);
@@ -284,6 +292,15 @@
     
       <li>
         <h3>
+          <a href="/2021/10/01/rituals/">
+            Rituals
+            <small>01 Oct 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
           <a href="/2021/09/16/every-damn-day/">
             If you love it, do it every day
             <small>16 Sep 2021</small>
@@ -296,15 +313,6 @@
           <a href="/2021/08/18/21-addictive-tech/">
             Optimizing Your Tech Stack for Productivity
             <small>18 Aug 2021</small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="/2021/07/26/paginate2/">
-            Leveraging Jekyll Paginate v2
-            <small>26 Jul 2021</small>
           </a>
         </h3>
       </li>
