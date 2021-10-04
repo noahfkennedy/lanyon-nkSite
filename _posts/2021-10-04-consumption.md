@@ -19,3 +19,8 @@ The epiphany reminded me of a lesson I learned in college. Around my sophomore y
 I think there's a compelling argument for creating more and consuming less. What does 30 minutes a day of news get you? Maybe at that next happy hour you'll be a bit more informed, come across as a bit more well-read. But how about one whole month of spending those 30 minutes creating something? That's 15 hours to spend on a creative project, something that will leave you feeling more fulfilled and probably make you a lot more interesting at that next happy hour. You'll learn real skills that are highly additive to the rest of your life. 
 
 I still read the news, and I still browse social media. But I'm trying to reframe it - this kind of consumption doesn't get me anywhere, and I'm trying to stop pretending that it's anything but entertainment. Recently, I read a [rather creative article](https://blog.tjcx.me/p/consume-less-create-more) that summarized a lot of what I had been feeling. I would absolutely recommend it.
+
+Daily check-in:
+Did I write? Yes
+Did I run? Yes
+Did I make music? For like 20 minutes, yes. 
