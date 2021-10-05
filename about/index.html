@@ -58,6 +58,14 @@
           ? 'unset' 
           : 'none';
     
+      var cats = ["all","personal","ontology"]
+
+      var postDiv = document.getElementById(++id);
+      postDiv.style.display =
+        (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
       var cats = ["all","tools-for-thought","ontology"]
 
       var postDiv = document.getElementById(++id);

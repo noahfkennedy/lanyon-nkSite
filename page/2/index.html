@@ -58,6 +58,14 @@
           ? 'unset' 
           : 'none';
     
+      var cats = ["all","personal","ontology"]
+
+      var postDiv = document.getElementById(++id);
+      postDiv.style.display =
+        (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
       var cats = ["all","tools-for-thought","ontology"]
 
       var postDiv = document.getElementById(++id);
@@ -233,6 +241,25 @@
   
     <div class="post">
       <h2 class="post-title">
+        <a href="https://noahkennedy.co/2021/07/26/paginate2/">
+          Leveraging Jekyll Paginate v2
+        </a>
+      </h2>
+
+      <span class="post-date">26 Jul 2021</span>
+
+      <p>GitHub Pages, the Jekyll website generator used for this site, generally works pretty well. One of the major upsides is simplicity, but like all simplistic coding tools, there are guard rails in place as well.</p>
+ -->
+      <!-- To add in a read more button, enable this -->
+      <!-- 
+        <a href="https://noahkennedy.co/2021/07/26/paginate2/">
+          read more ...
+        </a>
+       -->
+    <!-- </div>
+  
+    <div class="post">
+      <h2 class="post-title">
         <a href="https://noahkennedy.co/2021/07/13/we-are-back/">
           We're back!
         </a>
@@ -278,6 +305,24 @@
   <div id="1">
     <p class="itemInteriorSection">
       <h2 class="post-title">
+      <a href="https://noahkennedy.co/2021/10/04/consumption/">
+        Consumption
+      </a>
+    </h2>
+      <span class="post-date">04 Oct 2021</span>
+
+      <p>
+        <p>Earlier this year in the peak of the pandemic it dawned on me that I hadn’t really done anything creative in months, if not a full year. My life was mainly exercise and work, and while I had to leverage my problem solving skills, I never quite needed to be creative, to generate <em>something</em> from <em>nothing</em>, nothing but the neural connections deep in my brain.</p>
+
+        <br>
+      </p>
+    </p>
+  </div>
+
+  
+  <div id="2">
+    <p class="itemInteriorSection">
+      <h2 class="post-title">
       <a href="https://noahkennedy.co/2021/10/01/rituals/">
         Rituals
       </a>
@@ -293,7 +338,7 @@
   </div>
 
   
-  <div id="2">
+  <div id="3">
     <p class="itemInteriorSection">
       <h2 class="post-title">
       <a href="https://noahkennedy.co/2021/09/16/every-damn-day/">
@@ -312,7 +357,7 @@ One of my life philosophies is that daily repetition is the the #1 driver for ex
   </div>
 
   
-  <div id="3">
+  <div id="4">
     <p class="itemInteriorSection">
       <h2 class="post-title">
       <a href="https://noahkennedy.co/2021/08/18/21-addictive-tech/">
@@ -330,7 +375,7 @@ One of my life philosophies is that daily repetition is the the #1 driver for ex
   </div>
 
   
-  <div id="4">
+  <div id="5">
     <p class="itemInteriorSection">
       <h2 class="post-title">
       <a href="https://noahkennedy.co/2021/08/06/ny-ny/">
@@ -348,7 +393,7 @@ One of my life philosophies is that daily repetition is the the #1 driver for ex
   </div>
 
   
-  <div id="5">
+  <div id="6">
     <p class="itemInteriorSection">
       <h2 class="post-title">
       <a href="https://noahkennedy.co/2021/07/26/paginate2/">
@@ -366,7 +411,7 @@ One of my life philosophies is that daily repetition is the the #1 driver for ex
   </div>
 
   
-  <div id="6">
+  <div id="7">
     <p class="itemInteriorSection">
       <h2 class="post-title">
       <a href="https://noahkennedy.co/2021/07/13/we-are-back/">
@@ -384,7 +429,7 @@ One of my life philosophies is that daily repetition is the the #1 driver for ex
   </div>
 
   
-  <div id="7">
+  <div id="8">
     <p class="itemInteriorSection">
       <h2 class="post-title">
       <a href="https://noahkennedy.co/2021/01/10/welcome-to-lanyon/">

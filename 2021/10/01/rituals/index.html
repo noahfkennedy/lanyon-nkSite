@@ -58,6 +58,14 @@
           ? 'unset' 
           : 'none';
     
+      var cats = ["all","personal","ontology"]
+
+      var postDiv = document.getElementById(++id);
+      postDiv.style.display =
+        (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
       var cats = ["all","tools-for-thought","ontology"]
 
       var postDiv = document.getElementById(++id);
@@ -304,6 +312,15 @@
     
       <li>
         <h3>
+          <a href="/2021/10/04/consumption/">
+            Consumption
+            <small>04 Oct 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
           <a href="/2021/09/16/every-damn-day/">
             If you love it, do it every day
             <small>16 Sep 2021</small>
@@ -316,15 +333,6 @@
           <a href="/2021/08/18/21-addictive-tech/">
             Optimizing Your Tech Stack for Productivity
             <small>18 Aug 2021</small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="/2021/08/06/ny-ny/">
-            New York, New York
-            <small>06 Aug 2021</small>
           </a>
         </h3>
       </li>
