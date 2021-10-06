@@ -50,6 +50,14 @@
   function filterUsingCategory(selectedCategory) {
     var id = 0;
     
+      var cats = ["all","tools-for-thought"]
+
+      var postDiv = document.getElementById(++id);
+      postDiv.style.display =
+        (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
       var cats = ["all","personal","ontology"]
 
       var postDiv = document.getElementById(++id);
@@ -241,6 +249,25 @@
   
     <div class="post">
       <h2 class="post-title">
+        <a href="https://noahkennedy.co/2021/08/06/ny-ny/">
+          New York, New York
+        </a>
+      </h2>
+
+      <span class="post-date">06 Aug 2021</span>
+
+      <p>A word to the wise wise - don’t start your New York lease on July 1st. And if you do, just don’t move in on the first weekend of the month like everyone else.</p>
+ -->
+      <!-- To add in a read more button, enable this -->
+      <!-- 
+        <a href="https://noahkennedy.co/2021/08/06/ny-ny/">
+          read more ...
+        </a>
+       -->
+    <!-- </div>
+  
+    <div class="post">
+      <h2 class="post-title">
         <a href="https://noahkennedy.co/2021/07/26/paginate2/">
           Leveraging Jekyll Paginate v2
         </a>
@@ -305,6 +332,24 @@
   <div id="1">
     <p class="itemInteriorSection">
       <h2 class="post-title">
+      <a href="https://noahkennedy.co/2021/10/05/facebook/">
+        Consumption
+      </a>
+    </h2>
+      <span class="post-date">05 Oct 2021</span>
+
+      <p>
+        <p>Yesterday (October 4th, 2021), Facebook/Instagram/WhatsApp went down for a while. Like a <em>really</em> long time - about 6 hours.</p>
+
+        <br>
+      </p>
+    </p>
+  </div>
+
+  
+  <div id="2">
+    <p class="itemInteriorSection">
+      <h2 class="post-title">
       <a href="https://noahkennedy.co/2021/10/04/consumption/">
         Consumption
       </a>
@@ -320,7 +365,7 @@
   </div>
 
   
-  <div id="2">
+  <div id="3">
     <p class="itemInteriorSection">
       <h2 class="post-title">
       <a href="https://noahkennedy.co/2021/10/01/rituals/">
@@ -338,7 +383,7 @@
   </div>
 
   
-  <div id="3">
+  <div id="4">
     <p class="itemInteriorSection">
       <h2 class="post-title">
       <a href="https://noahkennedy.co/2021/09/16/every-damn-day/">
@@ -356,7 +401,7 @@
   </div>
 
   
-  <div id="4">
+  <div id="5">
     <p class="itemInteriorSection">
       <h2 class="post-title">
       <a href="https://noahkennedy.co/2021/08/18/21-addictive-tech/">
@@ -374,7 +419,7 @@
   </div>
 
   
-  <div id="5">
+  <div id="6">
     <p class="itemInteriorSection">
       <h2 class="post-title">
       <a href="https://noahkennedy.co/2021/08/06/ny-ny/">
@@ -392,7 +437,7 @@
   </div>
 
   
-  <div id="6">
+  <div id="7">
     <p class="itemInteriorSection">
       <h2 class="post-title">
       <a href="https://noahkennedy.co/2021/07/26/paginate2/">
@@ -410,7 +455,7 @@
   </div>
 
   
-  <div id="7">
+  <div id="8">
     <p class="itemInteriorSection">
       <h2 class="post-title">
       <a href="https://noahkennedy.co/2021/07/13/we-are-back/">
@@ -428,7 +473,7 @@
   </div>
 
   
-  <div id="8">
+  <div id="9">
     <p class="itemInteriorSection">
       <h2 class="post-title">
       <a href="https://noahkennedy.co/2021/01/10/welcome-to-lanyon/">
