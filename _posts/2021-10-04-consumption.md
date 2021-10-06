@@ -2,7 +2,7 @@
 layout: post
 title: Consumption
 published: true
-release_date: 2021-10-01
+release_date: 2021-10-04
 tags: all personal ontology
 ---
 
