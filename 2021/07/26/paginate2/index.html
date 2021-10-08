@@ -58,6 +58,14 @@
           ? 'unset' 
           : 'none';
     
+      var cats = ["all","tools-for-thought"]
+
+      var postDiv = document.getElementById(++id);
+      postDiv.style.display =
+        (selectedCategory == 'All' || cats.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
       var cats = ["all","personal","ontology"]
 
       var postDiv = document.getElementById(++id);
@@ -398,6 +406,15 @@ env:
     
       <li>
         <h3>
+          <a href="/2021/10/06/learning/">
+            Step 1 of Effective Learning
+            <small>06 Oct 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
           <a href="/2021/10/05/facebook/">
             Consumption
             <small>05 Oct 2021</small>
@@ -410,15 +427,6 @@ env:
           <a href="/2021/10/04/consumption/">
             Consumption
             <small>04 Oct 2021</small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="/2021/10/01/rituals/">
-            Rituals
-            <small>01 Oct 2021</small>
           </a>
         </h3>
       </li>
