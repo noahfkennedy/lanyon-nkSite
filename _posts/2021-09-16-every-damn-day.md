@@ -6,7 +6,7 @@ release_date: 2021-09-30
 tags: all tools-for-thought ontology
 ---
 
-One of my life philosophies is that daily reptition is the the #1 driver for excellence. <!--excerpt--> And, recently, I've realized that doing something every day makes you love it more too (quite possibly because you become better at it, and being good at something is satisfying). 
+One of my life philosophies is that daily repetition is the the #1 driver for excellence. <!--excerpt--> And, recently, I've realized that doing something every day makes you love it more too (quite possibly because you become better at it, and being good at something is satisfying). 
 
 The other month I went down a [Hacker News](https://news.ycombinator.com/news) rabbit hole that led me to one guy, Mike Crittenden, who has been posting a single blog post every day for a pretty long time (over a year now). 
 
