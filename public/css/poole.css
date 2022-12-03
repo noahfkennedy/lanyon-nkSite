@@ -67,7 +67,7 @@ body {
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: #268bd2;
+  color: #000000;
   text-decoration: none;
 }
 a strong {
@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
   font-size: 1.75rem;
-  color: #367da2 !important;
+  color: #000000 !important;
 }
 h2 {
   margin-top: 1rem;
@@ -348,7 +348,7 @@ tbody tr:nth-child(odd) th {
 .page-title,
 .post-title,
 .post-title a {
-  color: #1f6184 !important;
+  color: #000000 !important;
 }
 .page-title,
 .post-title {
@@ -381,7 +381,7 @@ tbody tr:nth-child(odd) th {
   color: #999;
 }
 .related-posts li a:hover {
-  color: #268bd2;
+  color: #000000;
   text-decoration: none;
 }
 .related-posts li a:hover small {

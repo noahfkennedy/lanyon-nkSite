@@ -312,7 +312,7 @@ a.sidebar-nav-item:focus {
 .page-title,
 .post-title,
 .post-title a {
-  color: #0a5e9a !important;
+  color: #000000 !important;
 }
 .page-title,
 .post-title {
@@ -345,7 +345,7 @@ a.sidebar-nav-item:focus {
   color: #999;
 }
 .related-posts li a:hover {
-  color: #268bd2;
+  color: #000000;
   text-decoration: none;
 }
 .related-posts li a:hover small {
