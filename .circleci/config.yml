@@ -1,0 +1,30 @@
+version: 2
+jobs:
+  deploy:
+    docker:
+      - image: circleci/ruby:latest
+        environment:
+          USER_NAME: "noahfkennedy"
+          USER_EMAIL: "noah.kennedy1@gmail.com"
+    steps:
+      - checkout
+      - run:
+          name: install dependencies
+          command: |
+            gem install bundler
+            bundle update --bundler
+      - run: bundle install --path=vendor/bundle && bundle clean
+      - run: JEKYLL_ENV=production bundle exec jekyll build
+      - deploy:
+          name: Deploy Release to GitHub
+          command: |
+              bash .circleci/deploy.sh
+workflows:
+  version: 2
+  build:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only: 
+                - gh-pages
