@@ -58,6 +58,10 @@ html {
   }
 }
 
+li {
+  font-size: 0.80rem;
+}
+
 body {
   color: #515151;
   background-color: #fff;
