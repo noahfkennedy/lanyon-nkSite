@@ -1,3 +1,35 @@
+# User Guide
+
+## Code snippets
+
+Thanks to a few cool tools, we can add code snippets. I used the guide [here](https://www.google.com/search?q=jekyll+%27webrick%27&ei=eUgKZNfYML-D0PEPiLCNSA&ved=0ahUKEwiX-ZHD3s_9AhW_ATQIHQhYAwkQ4dUDCBA&uact=5&oq=jekyll+%27webrick%27&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQA0oECEEYAFAAWABgAGgAcAB4AIABAIgBAJIBAJgBAA&sclient=gws-wiz-serp). 
+
+Example code snippet usage - 
+
+````
+{% highlight javascript %}
+function sayHello(name) {
+  if (!name) {
+    console.log('Hello World');
+  } else {
+    console.log(`Hello ${name}`);
+  }  
+}  
+{% endhighlight %}
+````
+
+## Pagination 
+
+To-do: add in details on pagination
+
+## Openssl
+
+I was dealing with some issues on Openssl. Ultimately, I had to run the following commands - 
+
+`brew info openssl@1.1` to get information on where my openssl was installed by homebrew. 
+
+`gem install eventmachine -- --with-openssl-dir=/opt/homebrew/opt/openssl@1.1` to tell eventmachine, the broken gem, the path to use for openssl. This seemed to solve problems. 
+
 # Lanyon
 
 Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.

@@ -16,6 +16,10 @@ pagination:
   sort_field: 'release_date'
   sort_reverse: true
 
+# Code snippets
+markdown: kramdown
+highlighter: rouge
+
 excerpt_separator: "<!--excerpt-->"
 
 
