@@ -9,7 +9,7 @@ Born and raised in the DMV, currently living in New York and working at [Tempus 
 
 I graduated in 2019 from the University of Delaware where I studied Chemical Engineering with a minor (and then some) in Computer Science. During undergrad I realized I loved the day-to-day of coding much more than engineering, despite a strong passion for science. Luckily, the field of Precision Medicine exists, and I've been fortunate to marry the ideas of a chemical pipeline with a data pipeline, and carry out my work in a field surrounded by scientists. 
 
-Here are some things I'm really interested in. It's a running list, and I'll probably write more about any subject on here. 
+Below are some of the things I'm really interested in.
 
 ## Data Engineering
 
@@ -24,6 +24,7 @@ I'm trying to get back to my chemical engineering roots, I just don't always kno
 * Biopharmaceutical Development.
 * Gut microbiome - [Seed](https://seed.com/) is doing interesting work, and I'm actively considering an advanced degree in computational biology to study multiomics. 
 * Computational research companies, stuff like [AlphaFold](https://deepmind.com/blog/article/AlphaFold-Using-AI-for-scientific-discovery) or the work at [Tempus](https://www.tempus.com/). I'm also eyeing work from [Creyeon Bio](https://creyonbio.com/) and [Atomwise](https://www.atomwise.com/). 
+* Wet-OS computers. Cache DNA is making some exciting advancements here. 
 
 
 ## Endurance Sports 
